@@ -1,5 +1,0 @@
-popis:
-vstup, vystup, ovladani:
-princip reseni:
-dat. struktury: list, tuple
-zhodnoceni/kvalita:
