@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/project_name.egg-info/PKG-INFO
+src/project_name.egg-info/SOURCES.txt
+src/project_name.egg-info/dependency_links.txt
+src/project_name.egg-info/entry_points.txt
+src/project_name.egg-info/not-zip-safe
+src/project_name.egg-info/requires.txt
+src/project_name.egg-info/top_level.txt
+src/projectname/__init__.py
+src/projectname/main.py
+src/projectname/project_name.py
