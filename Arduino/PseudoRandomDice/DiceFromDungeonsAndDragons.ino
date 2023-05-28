@@ -1,8 +1,8 @@
 #include "funshield.h"
 
-//globals
+//states of dice (generating/modifying)
 enum STATES {
-  NORMAL,
+  NORMAL, 
   CONFIG
 };
 
@@ -15,17 +15,17 @@ class Button {
       _previously_clicked = false;
     }
 
-    //returns true if button was pressed last 'loop' cycle
+    //return true if button was pressed last 'loop' cycle
     bool WasPreviouslyPressed(){
       return _previously_clicked;
     }
 
-    //returns true if button is pressed in this 'loop' cycle
+    //return true if button is pressed in this 'loop' cycle
     bool IsButtonPressed(){
       return _is_pressed;
     }
 
-    //sets triggered button to true and store its previous state
+    //set triggered button to true and store its previous state
     void ScanState(){
       _previously_clicked = _is_pressed;
       _is_pressed = isPressed();
@@ -33,7 +33,7 @@ class Button {
 
   private:
     bool _previously_clicked;
-    int _pin;
+    unsigned short _pin;
     bool _is_pressed;
 
     //build-in finds out if pin is HIGH
@@ -51,40 +51,43 @@ class Display {
       _position = 0;
     }
 
+    //show text when gathering random seed
     void ShowAnimation(){
-      _position++;
-      _position %= _display_width;
+      incrementPositionAndModulo();
+
       writeGlyph(_word_dice[_position]);
     } 
 
-    void ShowGeneratedNumber(int random_number){
-      _position++;
-      _position %= _display_width;
-      if (disableLeadingZeros(random_number) == true) //disable leading zeros problem
+    //every 'loop' cycle show one digit of generated number
+    void ShowGeneratedNumber(unsigned int random_number){
+      incrementPositionAndModulo();
+
+      if (disableLeadingZeros(random_number) == true) //disable leading zeros
         return;
-      int extraxt_digit = (int)getGlyphPosition(random_number, _display_width - _position);
-      byte glyph = digits[extraxt_digit];
+      
+      unsigned short extraxt_digit = (unsigned short)getGlyphPosition(random_number, _display_width - _position); //the smallest digit is on the right, the display is enumerate from left though
+      byte glyph = digits[extraxt_digit]; //get byte number representation from funshield.h array
       writeGlyph(glyph);
     }
 
-    void ShowConfiguration(int number_of_throws, int number_of_sides){
-      _position++;
-      _position %= _display_width;
+    //every 'loop' cycle show one info of current dice configuration
+    void ShowConfiguration(unsigned short number_of_throws, unsigned short number_of_sides){
+      incrementPositionAndModulo();
       
       switch(_position){
-        case 0:
+        case 0: //most left module
           writeGlyph(digits[number_of_throws]);
           break;
         case 1:
           writeGlyph(_letter_d);
           break;
-        default:
-          if (number_of_sides < 10){
+        default: //two modules from right - number of its sides
+          if (number_of_sides < 10){ //representing sigle digit numbers shifted module left, eg. 4-side dice as 40 but the zero not shown -> look like just 4
             if (_position == 3)
               return;
             number_of_sides *= 10;
           }
-          int extraxt_digit = (int)getGlyphPosition(number_of_sides, _display_width - _position);
+          unsigned int extraxt_digit = (unsigned short)getGlyphPosition(number_of_sides, _display_width - _position);
           byte glyph = digits[extraxt_digit];
           writeGlyph(glyph);
           break;
@@ -92,11 +95,17 @@ class Display {
     }
     
   private:
-    const byte _letter_d = 0b10100001;
-    const byte _word_dice[4] = {0b10100001, 0b11111001, 0b11000110, 0b10000110};
-    int _position;
-    const int _display_width = 4;
+    unsigned short _position;
+    const byte _letter_d = 0b10100001; //'d'
+    const byte _word_dice[4] = {0b10100001, 0b11111001, 0b11000110, 0b10000110}; //{ d, i, c, e }
+    const unsigned short _display_width = 4; //number of modules
 
+    void incrementPositionAndModulo(){
+      _position++;
+      _position %= _display_width;
+    }
+
+    //writes given byte of data to given module - position {0, 1, 2, 3}
     void writeGlyph(byte glyph){
       digitalWrite(latch_pin, LOW);
       shiftOut(data_pin, clock_pin, MSBFIRST, glyph);
@@ -104,22 +113,21 @@ class Display {
       digitalWrite(latch_pin, HIGH);
     }
     
-    int getGlyphPosition(int number, int position){
-      int digit = 0;
+    //extract cypher on given position and return it
+    int getGlyphPosition(unsigned short number, unsigned short position){
+      unsigned short digit = 0;
 
-      for (int i = 0; i < position; ++i){
+      for (unsigned short i = 0; i < position; ++i){
         digit = number % 10;
         number /= 10;
       }
       return digit;
     }
 
-    bool disableLeadingZeros(int random_number){
-      if ((_position == 0) && (random_number < 1000))
-        return true;
-      else if ((_position == 1) && (random_number < 100))
-        return true;
-      else if ((_position == 2) && (random_number < 10))
+    //
+    bool disableLeadingZeros(unsigned int random_number){
+      unsigned int number_of_zeros = _display_width - _position - 1; //prepare decimal exponent
+      if (random_number < pow(10, number_of_zeros)) //current position and number cypher condition, eg. if ((_position == 1) && (random_number < 100)){...}
         return true;
       return false;
     }
@@ -128,27 +136,27 @@ class Display {
 class Dice {
   public:
     Dice(){
-      _state = NORMAL;
-      _dice_sides_point = 1;
-      _number_of_throws = 3;
+      _state = NORMAL; //starting state -> generating
+      _dice_sides_point = 1; //starting dice -> first in const array _dice_sides
+      _number_of_throws = 3; //starting dice throws
     }
 
-    void ChangeSidesCount(){
+    void IncrementDiceSides(){
       _dice_sides_point++;
       _dice_sides_point %= _dice_types_count;
     }
 
-    void ChangeThrowsCount(){
+    void IncrementThrows(){
       _number_of_throws++;
       if (_number_of_throws == _max_throws)
         _number_of_throws = 1;
     }
 
-    int GetThrowsCount(){
+    unsigned short GetThrowsCount(){
       return _number_of_throws;
     }
 
-    int GetSidesCount(){
+    unsigned short GetSidesCount(){
       return _dice_sides[_dice_sides_point];
     }
 
@@ -160,7 +168,7 @@ class Dice {
       return _state;
     }
 
-    long GetStartTime(){
+    unsigned long GetStartTime(){
       return _start_press;
     }
 
@@ -168,28 +176,29 @@ class Dice {
       _start_press = millis();
     }
 
-    int GetRandomNumber(){
+    unsigned int GetRandomNumber(){
       return _random_number;
     }
 
-    void GenerateRandomNumber(long pressing_time){
-      int random_number = 0;
+    //generate pseudo-random sum of pseudo-random numbers in given interval of dice sides
+    void GenerateRandomNumber(unsigned long pressing_time){
+      unsigned int random_number = 0;
       randomSeed(pressing_time);
 
-      for (int i = 0; i < _number_of_throws; ++i){
-        random_number += random(1, _dice_sides[_dice_sides_point] + 1);
+      for (unsigned short i = 0; i < _number_of_throws; ++i){ //sum of 1-9 random generated numbers in interval [4-100]
+        random_number += random(1, _dice_sides[_dice_sides_point] + 1); //to be inclusive
       }
       _random_number = random_number;
     }
 
   private:
-    long _start_press;
-    int _dice_sides_point;
-    const int _dice_sides[7] = { 4, 6, 8, 10, 12, 20, 100 };
-    const int _dice_types_count = sizeof(_dice_sides) / sizeof(_dice_sides[0]);
-    int _number_of_throws;
-    const int _max_throws = 10;
-    int _random_number;
+    unsigned long _start_press;
+    unsigned short _dice_sides_point;
+    const unsigned short _dice_sides[7] = { 4, 6, 8, 10, 12, 20, 100 };
+    const unsigned short _dice_types_count = sizeof(_dice_sides) / sizeof(_dice_sides[0]);
+    unsigned short _number_of_throws;
+    const unsigned short _max_throws = 10;
+    unsigned int _random_number;
     STATES _state;
 };
 
@@ -201,73 +210,77 @@ Button btns[3] = {
   Button(button2_pin), //config - change throw count
   Button(button3_pin) //config - change dice
   };
-constexpr int btns_count = sizeof(btns) / sizeof(btns[1]);
+constexpr unsigned short btns_count = sizeof(btns) / sizeof(btns[1]);
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
 }
 
-void ButtonsManagement(int btns_count, STATES curr_state){
-  for (int button_id = 0; button_id < btns_count; ++button_id){
+//find out if button pressed and do given action
+void ButtonsManagement(unsigned int btns_count, STATES curr_state){
+  for (unsigned int button_id = 0; button_id < btns_count; ++button_id){
     btns[button_id].ScanState();
-    if (btns[button_id].IsButtonPressed() == true){
+    if (btns[button_id].IsButtonPressed() == true){ //if pressed continue to action
       ButtonSwitchCase(button_id, curr_state);
-      return;
+      return; //priority action -> the normal/generating always executed
     }
-    if ((btns[0].IsButtonPressed() == false) && (btns[0].WasPreviouslyPressed() == true)){
-      int pressing_time = (long)millis() - dice.GetStartTime();
-      dice.GenerateRandomNumber(pressing_time);
+    if ((btns[0].IsButtonPressed() == false) && (btns[0].WasPreviouslyPressed() == true)){ //after triggering generating button => current state off && previous on
+      unsigned long pressing_time = (unsigned long)millis() - dice.GetStartTime(); //time difference between first press and let go
+      dice.GenerateRandomNumber(pressing_time); //generate random number with given seed
     }
   }
 }
 
-void ButtonSwitchCase(int button_id, STATES curr_state){
+//the main logical states of dice and its actions
+void ButtonSwitchCase(unsigned short button_id, STATES curr_state){
   switch (curr_state) {
     case NORMAL:
       if (button_id == 0){
-        if (btns[button_id].WasPreviouslyPressed() == false)
+        if (btns[button_id].WasPreviouslyPressed() == false) //first trigger of generating button
           dice.AnullTime();
         else
-          disp.ShowAnimation();
+          disp.ShowAnimation(); //show the text dice while holding
       }
       else
-        dice.ChangeState(CONFIG);
+        dice.ChangeState(CONFIG); //go to config mode - button 2/3 triggered
       break;
+
     case CONFIG:
       if (button_id == 0)
-        dice.ChangeState(NORMAL);
+        dice.ChangeState(NORMAL); //go to config mode - button 1 triggered
       else
-        Increment(button_id);
+        Increment(button_id); //increment given action
       break;
   }
 }
 
-void Increment(int button_id){
-  if ((button_id == 1) && (btns[button_id].WasPreviouslyPressed() == false)){
-    dice.ChangeThrowsCount();
+//increment throws or sides of cube
+void Increment(unsigned short button_id){
+  if ((button_id == 1) && (btns[button_id].WasPreviouslyPressed() == false)){ //to prevent debouncing - trigger just once a press
+    dice.IncrementThrows();
   }
   else if ((button_id == 2) && (btns[button_id].WasPreviouslyPressed() == false)){
-    dice.ChangeSidesCount();
+    dice.IncrementDiceSides();
   }
 }
 
+//decide which mode and behave so
 void DisplayManagement(STATES curr_state){
   if (curr_state == NORMAL){
-    int random_number = dice.GetRandomNumber();
-    disp.ShowGeneratedNumber(random_number);
+    unsigned int random_number = dice.GetRandomNumber(); //get stored generated number
+    disp.ShowGeneratedNumber(random_number); //show number on display
   }
   else{
-    int number_of_throws = dice.GetThrowsCount();
-    int number_of_sides = dice.GetSidesCount();
-    disp.ShowConfiguration(number_of_throws, number_of_sides);
+    unsigned short number_of_throws = dice.GetThrowsCount();
+    unsigned short number_of_sides = dice.GetSidesCount();
+    disp.ShowConfiguration(number_of_throws, number_of_sides); //show current configuration
   }
 }
 
 void loop(){
   // put your main code here, to run repeatedly:
-  STATES curr_state = dice.GetState();
+  STATES curr_state = dice.GetState(); //findout current state of dice
   ButtonsManagement(btns_count, curr_state);
-  if (!((btns[0].IsButtonPressed() == true) && (btns[0].WasPreviouslyPressed() == true)))
+  if (!((btns[0].IsButtonPressed() == true) && (btns[0].WasPreviouslyPressed() == true))) //to prevent showing previous generated number
     DisplayManagement(curr_state);
 }
