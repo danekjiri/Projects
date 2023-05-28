@@ -192,6 +192,7 @@ class Dice {
     }
 
   private:
+    //dice configuration
     unsigned long _start_press;
     unsigned short _dice_sides_point;
     const unsigned short _dice_sides[7] = { 4, 6, 8, 10, 12, 20, 100 };
@@ -211,6 +212,9 @@ Button btns[3] = {
   Button(button3_pin) //config - change dice
   };
 constexpr unsigned short btns_count = sizeof(btns) / sizeof(btns[1]);
+unsigned short generating_button = 0;
+unsigned short increment_throws_button = 1;
+unsigned short increment_sides_button = 2;
 
 void setup() {
   // put your setup code here, to run once:
@@ -224,7 +228,7 @@ void ButtonsManagement(unsigned int btns_count, STATES curr_state){
       ButtonSwitchCase(button_id, curr_state);
       return; //priority action -> the normal/generating always executed
     }
-    if ((btns[0].IsButtonPressed() == false) && (btns[0].WasPreviouslyPressed() == true)){ //after triggering generating button => current state off && previous on
+    if ((btns[generating_button].IsButtonPressed() == false) && (btns[generating_button].WasPreviouslyPressed() == true)){ //after triggering generating button => current state off && previous on
       unsigned long pressing_time = (unsigned long)millis() - dice.GetStartTime(); //time difference between first press and let go
       dice.GenerateRandomNumber(pressing_time); //generate random number with given seed
     }
@@ -235,33 +239,31 @@ void ButtonsManagement(unsigned int btns_count, STATES curr_state){
 void ButtonSwitchCase(unsigned short button_id, STATES curr_state){
   switch (curr_state) {
     case NORMAL:
-      if (button_id == 0){
-        if (btns[button_id].WasPreviouslyPressed() == false) //first trigger of generating button
+      if (button_id == generating_button){
+        if (btns[generating_button].WasPreviouslyPressed() == false) //first trigger of generating button
           dice.AnullTime();
         else
-          disp.ShowAnimation(); //show the text dice while holding
+          disp.ShowAnimation(); //show the text 'd i c e' while holding
       }
       else
         dice.ChangeState(CONFIG); //go to config mode - button 2/3 triggered
       break;
 
     case CONFIG:
-      if (button_id == 0)
+      if (button_id == generating_button)
         dice.ChangeState(NORMAL); //go to config mode - button 1 triggered
       else
-        Increment(button_id); //increment given action
+        Increment(button_id); //do button 2/3 incremental action
       break;
   }
 }
 
 //increment throws or sides of cube
 void Increment(unsigned short button_id){
-  if ((button_id == 1) && (btns[button_id].WasPreviouslyPressed() == false)){ //to prevent debouncing - trigger just once a press
+  if ((button_id == increment_throws_button) && (btns[button_id].WasPreviouslyPressed() == false)) //to prevent debouncing - trigger just once a press
     dice.IncrementThrows();
-  }
-  else if ((button_id == 2) && (btns[button_id].WasPreviouslyPressed() == false)){
+  else if ((button_id == increment_sides_button) && (btns[button_id].WasPreviouslyPressed() == false))
     dice.IncrementDiceSides();
-  }
 }
 
 //decide which mode and behave so
@@ -280,7 +282,8 @@ void DisplayManagement(STATES curr_state){
 void loop(){
   // put your main code here, to run repeatedly:
   STATES curr_state = dice.GetState(); //findout current state of dice
+  
   ButtonsManagement(btns_count, curr_state);
-  if (!((btns[0].IsButtonPressed() == true) && (btns[0].WasPreviouslyPressed() == true))) //to prevent showing previous generated number
+  if (!((btns[generating_button].IsButtonPressed() == true) && (btns[generating_button].WasPreviouslyPressed() == true))) //to prevent showing previous generated number
     DisplayManagement(curr_state);
 }
