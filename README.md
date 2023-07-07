@@ -37,7 +37,7 @@ Please feel free to explore each project's directory to learn more about its pur
 
 If you have any questions or would like to discuss further, please feel free to reach out to me:
 
-- [Email](jirkadanek@icloud.com)
-- [LinkedIn](www.linkedin.com/in/jiridanek)
+- [Email](mailto:jirkadanek@icloud.com)
+- [LinkedIn](https://www.linkedin.com/in/jiridanek)
 
 I'm open to collaboration opportunities, feedback, or any other inquiries. Thank you for visiting my coding projects showcase repository!
