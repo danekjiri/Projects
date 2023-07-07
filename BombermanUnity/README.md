@@ -1,8 +1,8 @@
 # Bomberman: CPU Wars
 
-![Game preview](https://gitlab.mff.cuni.cz/teaching/nprg031/2023-summer/student-danekji1/-/tree/develop/etc/Graphic/Others/GamePicture.png?raw=true)
+![Game preview](https://github.com/danekjiri/myProj/blob/main/BombermanUnity/etc/Graphic/Others/GamePicture.png)
 
-![Game posted to itch.io](https://jirkadanek.itch.io/bomberman-cpu-wars)
+[Game posted to itch.io](https://jirkadanek.itch.io/bomberman-cpu-wars)
 
 ## Description
 
