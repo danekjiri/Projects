@@ -28,7 +28,7 @@ The game TicTacToe created using python programming language playable in termina
 
 5. **3-Tier Architecture Databases**
 
-The work about relational databases and its implementation using various software done as a graduation work.
+>The work about relational databases and its implementation using various software done as a graduation work.
 
 
 Please feel free to explore each project's directory to learn more about its purpose, implementation, and any notable features.
@@ -37,7 +37,7 @@ Please feel free to explore each project's directory to learn more about its pur
 
 If you have any questions or would like to discuss further, please feel free to reach out to me:
 
-- Email: [jirkadanek@icloud.com]
-- LinkedIn: [www.linkedin.com/in/jiridanek]
+- [Email](jirkadanek@icloud.com)
+- [LinkedIn](www.linkedin.com/in/jiridanek)
 
 I'm open to collaboration opportunities, feedback, or any other inquiries. Thank you for visiting my coding projects showcase repository!
