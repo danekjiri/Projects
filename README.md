@@ -4,25 +4,33 @@ Welcome to my coding projects showcase repository! This repository is a compilat
 
 ## Overview
 
-Within this repository, you will find a diverse range of projects covering different programming domains. These projects reflect my passion for coding, problem-solving abilities, and dedication to producing high-quality code. Each project has its own directory, containing relevant files.
+Within this repository, you will find a diverse range of projects covering different programming domains. Each project has its own directory, containing relevant files.
 
 ## Projects
 
 Here's a glimpse of some projects included in this repository:
 
-1. **C++ with Arduino**: [Brief description of project 1]
+1. **C++ with Arduino**: 
 
-2. **Some Python3 puzzles**: [Brief description of project 2]
+A few project using Arduino Uno and Funshield accessory to perform Stopwatches, Running display message or Performing n-dimensional cube
 
-3. **Some C# puzzles**: [Brief description of project 3]
+2. **Some Python3 and C# puzzles**:
 
-4. **Tic Tac Toe with Minimax**: [Brief description of project 3] 
+A couple of small puzzles solves using Python3 and its libraries mainly wiht bash.
+
+3. **Recreated local multiplayer game of Bomberman**:
+
+The game Bomberman created in Unity has its documentation and README.md in its folder.
+
+4. **Tic Tac Toe with Minimax**: 
+
+The game TicTacToe created using python programming language playable in terminal with a small documentation.
+
+5. **3 Tier Architecture Databases**
+
+The work about relational databases and its implementation using various software done as a graduation work.
 
 Please feel free to explore each project's directory to learn more about its purpose, implementation, and any notable features.
-
-## Usage
-
-To access a specific project, navigate to its directory, where you will find detailed instructions on how to set it up, run it, or deploy it, depending on the project type. Make sure to review any dependencies or prerequisites mentioned in the project's documentation.
 
 ## Contact
 
