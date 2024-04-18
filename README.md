@@ -16,7 +16,7 @@ Here's a glimpse of some projects included in this repository:
 
 2. **Some Python3 and C# puzzles**:
 
->A couple of small puzzles solves using Python3 and its libraries mainly wiht bash.
+>A couple of small puzzles solves using Python3 and its libraries mainly with bash.
 
 3. **Recreated local multiplayer game of Bomberman**:
 
