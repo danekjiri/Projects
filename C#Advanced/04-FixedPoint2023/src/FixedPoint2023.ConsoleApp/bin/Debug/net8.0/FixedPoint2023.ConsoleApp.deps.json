@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FixedPoint2023.ConsoleApp/1.0.0": {
+        "dependencies": {
+          "FixedPointLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FixedPoint2023.ConsoleApp.dll": {}
+        }
+      },
+      "FixedPointLibrary/1.0.0": {
+        "runtime": {
+          "FixedPointLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FixedPoint2023.ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FixedPointLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

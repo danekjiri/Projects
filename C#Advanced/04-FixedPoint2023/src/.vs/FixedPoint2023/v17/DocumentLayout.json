@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75C82C6A-0213-461F-9FEC-C824083B3D04}|FixedPoint2023.ConsoleApp\\FixedPoint2023.ConsoleApp.csproj|\\\\mac\\home\\documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-fixedpoint2023\\src\\fixedpoint2023.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77A86BF-73E6-49CD-99BA-84920B2BFEE2}|FixedPointLibrary\\FixedPointLibrary\\FixedPointLibrary.csproj|\\\\mac\\home\\documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-fixedpoint2023\\src\\fixedpointlibrary\\fixedpointlibrary\\fixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C82C6A-0213-461F-9FEC-C824083B3D04}|FixedPoint2023.ConsoleApp\\FixedPoint2023.ConsoleApp.csproj|\\\\mac\\home\\documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-fixedpoint2023\\src\\fixedpoint2023.consoleapp\\fixedpoint2023.reference-output.cs-cz-version2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 277,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 537,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FixedPoint2023.reference-output.cs-CZ-version2.txt",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\FixedPoint2023.reference-output.cs-CZ-version2.txt",
+              "RelativeDocumentMoniker": "FixedPoint2023.ConsoleApp\\FixedPoint2023.reference-output.cs-CZ-version2.txt",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\FixedPoint2023.reference-output.cs-CZ-version2.txt",
+              "RelativeToolTip": "FixedPoint2023.ConsoleApp\\FixedPoint2023.reference-output.cs-CZ-version2.txt",
+              "ViewState": "AQIAAC0AAAAAiDMzMzPrv0QAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-02T21:06:24.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fixed.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\Fixed.cs",
+              "RelativeDocumentMoniker": "FixedPointLibrary\\FixedPointLibrary\\Fixed.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\Fixed.cs",
+              "RelativeToolTip": "FixedPointLibrary\\FixedPointLibrary\\Fixed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T14:45:33.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "FixedPoint2023.ConsoleApp\\Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "FixedPoint2023.ConsoleApp\\Program.cs",
+              "ViewState": "AQIAACgAAADAz8zMzAwswAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T07:21:52.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

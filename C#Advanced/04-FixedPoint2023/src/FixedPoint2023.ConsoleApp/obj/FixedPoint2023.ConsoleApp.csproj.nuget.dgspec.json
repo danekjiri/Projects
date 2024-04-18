@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\FixedPoint2023.ConsoleApp.csproj": {}
+  },
+  "projects": {
+    "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\FixedPoint2023.ConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\FixedPoint2023.ConsoleApp.csproj",
+        "projectName": "FixedPoint2023.ConsoleApp",
+        "projectPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\FixedPoint2023.ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\jiridanek\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPoint2023.ConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jiridanek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\FixedPointLibrary.csproj": {
+                "projectPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\FixedPointLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\FixedPointLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\FixedPointLibrary.csproj",
+        "projectName": "FixedPointLibrary",
+        "projectPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\FixedPointLibrary.csproj",
+        "packagesPath": "C:\\Users\\jiridanek\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jiridanek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

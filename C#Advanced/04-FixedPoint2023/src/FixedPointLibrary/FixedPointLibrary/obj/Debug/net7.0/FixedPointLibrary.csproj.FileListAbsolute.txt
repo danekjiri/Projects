@@ -1,0 +1,11 @@
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\bin\Debug\net7.0\FixedPointLibrary.deps.json
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\bin\Debug\net7.0\FixedPointLibrary.dll
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\bin\Debug\net7.0\FixedPointLibrary.pdb
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\FixedPointLibrary.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\FixedPointLibrary.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\FixedPointLibrary.AssemblyInfo.cs
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\FixedPointLibrary.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\FixedPointLibrary.dll
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\refint\FixedPointLibrary.dll
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\FixedPointLibrary.pdb
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\04-FixedPoint2023\src\FixedPointLibrary\FixedPointLibrary\obj\Debug\net7.0\ref\FixedPointLibrary.dll

@@ -1,0 +1,14 @@
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\bin\Debug\net8.0\Validators.ConsoleApp.exe
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\bin\Debug\net8.0\Validators.ConsoleApp.deps.json
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\bin\Debug\net8.0\Validators.ConsoleApp.runtimeconfig.json
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\bin\Debug\net8.0\Validators.ConsoleApp.dll
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\bin\Debug\net8.0\Validators.ConsoleApp.pdb
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.AssemblyInfo.cs
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.dll
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\refint\Validators.ConsoleApp.dll
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.pdb
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\Validators.ConsoleApp.genruntimeconfig.cache
+\\Mac\Home\Documents\mff_uk\4_semestr\advanced_csharp\danekji1\05-Validators\Validators.ConsoleApp\obj\Debug\net8.0\ref\Validators.ConsoleApp.dll

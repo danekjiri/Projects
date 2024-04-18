@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.MinimalisticUIFramework", "DemoApp.MinimalisticUIFramework\DemoApp.MinimalisticUIFramework.csproj", "{9B352AE3-DA0B-4BCF-88B3-376FCCBEA67B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalisticUIFramework", "MinimalisticUIFramework\MinimalisticUIFramework.csproj", "{79F1AA56-0B48-4003-8B8E-E31101965FB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B352AE3-DA0B-4BCF-88B3-376FCCBEA67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B352AE3-DA0B-4BCF-88B3-376FCCBEA67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B352AE3-DA0B-4BCF-88B3-376FCCBEA67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B352AE3-DA0B-4BCF-88B3-376FCCBEA67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F1AA56-0B48-4003-8B8E-E31101965FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F1AA56-0B48-4003-8B8E-E31101965FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F1AA56-0B48-4003-8B8E-E31101965FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F1AA56-0B48-4003-8B8E-E31101965FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB7A545E-5496-4893-A83D-D1CB8BFC1C7B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD78AEAF-B271-4890-80E2-53DE878651BF}|Validators.ConsoleApp\\Validators.ConsoleApp.csproj|\\\\mac\\home\\documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-validators\\validators.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD78AEAF-B271-4890-80E2-53DE878651BF}|Validators.ConsoleApp\\Validators.ConsoleApp.csproj|\\\\mac\\home\\documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-validators\\validators.consoleapp\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237EBD6E-1F3D-4BBA-853D-04572DEDF7EE}|Solution Items{237EBD6E-1F3D-4BBA-853D-04572DEDF7EE}|\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.reference-output.cs-CZ.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 271,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.ConsoleApp\\Validator.cs",
+              "RelativeDocumentMoniker": "Validators.ConsoleApp\\Validator.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.ConsoleApp\\Validator.cs",
+              "RelativeToolTip": "Validators.ConsoleApp\\Validator.cs",
+              "ViewState": "AQIAAFMAAAAAaGZmZmb2v10AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T13:09:46.614Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 283,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "Validators.ConsoleApp\\Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "Validators.ConsoleApp\\Program.cs",
+              "ViewState": "AQIAAHEAAAAAbmZmZmYEwJEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T12:50:56.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Validators.reference-output.cs-CZ.txt",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.reference-output.cs-CZ.txt",
+              "RelativeDocumentMoniker": "Validators.reference-output.cs-CZ.txt",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\05-Validators\\Validators.reference-output.cs-CZ.txt",
+              "RelativeToolTip": "Validators.reference-output.cs-CZ.txt",
+              "ViewState": "AQIAAEcAAAAAHgAAAMAtwFgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-05T12:54:02.209Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

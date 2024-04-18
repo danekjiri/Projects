@@ -1,0 +1,50 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF2BA950-7120-4436-BACD-475C21274CD0}|FixedPointLibrary\\FixedPointLibrary.csproj|\\\\mac\\home\\documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-fixedpoint2023\\src\\fixedpointlibrary\\fixedpointlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 286,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\Class1.cs",
+              "RelativeDocumentMoniker": "FixedPointLibrary\\Class1.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\mff_uk\\4_semestr\\advanced_csharp\\danekji1\\04-FixedPoint2023\\src\\FixedPointLibrary\\FixedPointLibrary\\Class1.cs",
+              "RelativeToolTip": "FixedPointLibrary\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T16:07:51.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

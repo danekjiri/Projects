@@ -1,0 +1,120 @@
+--- plain Validators ---
+  >>> Validation failed >>>
+    > "   " is empty or just whitespaces.
+
+  >>> Validation successful >>>
+
+  >>> Validation failed >>>
+    > 7 is greater than maximum 6.
+
+  >>> Validation successful >>>
+
+  >>> Validation failed >>>
+    > "Jack" length 4 is less than minimum 5.
+
+  >>> Validation failed >>>
+    > "hello-world" length 11 is greater than maximum 6.
+
+  >>> Validation successful >>>
+
+  >>> Validation failed >>>
+    > "" is null.
+
+  >>> Validation failed >>>
+    > "" is null.
+
+  >>> Validation failed >>>
+    > "" is null.
+
+  >>> Validation successful >>>
+
+--- AdvancedOrderValidator.Validate() ---
+  >>> Validation failed >>>
+    > "    " is empty or just whitespaces.
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > 600 is greater than maximum 10.
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > 600 is greater than maximum 10.
+    > "" is empty or just whitespaces.
+    > "" length 0 is less than minimum 1.
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > "AC405-12345678" length 14 is greater than maximum 8.
+
+  >>> Validation successful >>>
+
+--- OrderValidator.Validate() ---
+  >>> Validation failed >>>
+    > "    " is empty or just whitespaces.
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > 600 is greater than maximum 10.
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > 600 is greater than maximum 10.
+    > "" is empty or just whitespaces.
+    > "" length 0 is less than minimum 1.
+    > 0 is less than minimum 0,01.
+    > "" is null.
+
+  >>> Validation failed >>>
+    > "AC405-12345678" length 14 is greater than maximum 8.
+
+  >>> Validation successful >>>
+
+--- ValidateSuperOrders() ---
+  >>> Validation successful >>>
+
+  >>> Validation failed >>>
+    > 700 is greater than maximum 10.
+
+  >>> Validation failed >>>
+    > 800 is greater than maximum 10.
+    > "" is empty or just whitespaces.
+    > "" length 0 is less than minimum 1.
+    > 0 is less than minimum 0,01.
+
+--- ValidateAll() ---
+  >>> Validation successful >>>
+
+  >>> Validation failed >>>
+    > 700 is greater than maximum 10.
+
+  >>> Validation failed >>>
+    > 800 is greater than maximum 10.
+    > "" is empty or just whitespaces.
+    > "" length 0 is less than minimum 1.
+    > 0 is less than minimum 0,01.
+
+--- ValidateAll<SuperOrder>() ---
+  >>> Validation successful >>>
+
+  >>> Validation failed >>>
+    > 700 is greater than maximum 10.
+
+  >>> Validation failed >>>
+    > 800 is greater than maximum 10.
+    > "" is empty or just whitespaces.
+    > "" length 0 is less than minimum 1.
+    > 0 is less than minimum 0,01.
+
